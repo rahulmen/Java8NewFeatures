@@ -1,0 +1,58 @@
+Rules :-
+
+
+
+1. If parent functional interface contain one abstract method then child interface is also functional Interface.
+
+@FunctionalInterface
+interface interfParent{
+
+void m1();
+
+}
+
+@FunctionalInterface
+interface interfChild extends interfParent{
+
+}
+
+
+
+2. If parent functional interface contain one abstract method then child interface can contain method with same name and same signature only.
+
+@FunctionalInterface
+interface interfParent{
+
+void m1();
+
+}
+
+@FunctionalInterface
+interface interfChild extends interfParent{
+
+void m1();
+
+}
+
+3. If parent functional interface contain one abstract method then child interface contain another abstract method then we will get CE.
+
+@FunctionalInterface
+interface interfParent{
+
+void m1();
+
+}
+
+@FunctionalInterface
+interface interfChild extends interfParent{
+
+void m2();
+
+}
+
+
+CE :- Unexpected @FunctionalInterface annotation multiple non overriding abstract method found in Interface interfChild
+
+
+
+

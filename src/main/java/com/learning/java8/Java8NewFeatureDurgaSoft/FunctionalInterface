@@ -1,0 +1,57 @@
+FUNCTIONAL INTERFACE
+======================
+
+1. Function Interface are those interface which contain only single abstract method but that interface can contain any number of default
+   and static method.
+
+   Example :- Runnable :- Only run() method
+              Callable :- Only call() method
+
+
+   @FunctionInterface
+   interface interf{
+
+   //Single abstract method
+   public abstract void m1();
+
+   default void m2(){
+   System.out.println("default method");
+   }
+
+   public static void m3(){
+    System.out.println("static method");
+   }
+
+   }
+
+2. @FunctionalInterface annotation is not mandatory but its meta data to the compiler for validation regarding function interface like
+   whether that functional interface is having only one abstract method or not.
+
+      interface interf{
+
+      //Single abstract method
+      public abstract void m1();
+
+      public abstract void m2();
+
+      }
+
+
+      Without @FunctionInterface annotation we will get no exception.
+
+      With @FunctionInterface annotation we will get below exception :- Unexpected @FunctionInterface annotation multiple non-overriding abstract method present in Interface interf
+
+     ==========================
+
+     interface interf{
+
+           }
+
+
+     Without @FunctionInterface annotation we will get no exception.
+
+     With @FunctionInterface annotation we will get below exception :- no abstract method found in Interface interf
+
+
+
+
