@@ -54,4 +54,14 @@ FUNCTIONAL INTERFACE
 
 
 
+Important Point :- Why @FunctionalInterface can not contain more than one abstract method?
+
+Answer :- Because at the time of compilation compiler can get confuse this lambda expression is the implementation of which
+          abstract method and compiler will throw
+
+          CE :- incompatible types : <InterfaceName> is not a functional Interface
+                                     Multiple non-overriding abstract method in interface interf1
+
+
+
 
