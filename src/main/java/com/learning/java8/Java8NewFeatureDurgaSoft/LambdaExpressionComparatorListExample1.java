@@ -4,7 +4,7 @@ package com.learning.java8.Java8NewFeatureDurgaSoft;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-public class LambdaExpressionComparatorExample1 {
+public class LambdaExpressionComparatorListExample1 {
 
     public static void main(String[] args) {
         TreeSet<Integer> treeSet = new TreeSet<>((o1,o2) ->{
