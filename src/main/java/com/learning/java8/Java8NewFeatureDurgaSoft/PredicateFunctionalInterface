@@ -1,0 +1,9 @@
+Predicate Functional Interface
+================================
+
+1. Predicate Functional Interface is a boolean valued Function.
+
+Example :-
+
+Predicate<Integer> predicate = I->I>100;
+predicate.test(100);
