@@ -1,0 +1,18 @@
+Predicate Functional Interface
+================================
+
+1. Function Functional Interface is not a boolean valued Function.
+
+@Functional Interface
+interface Function<T t,R r>{
+R apply(T t);
+}
+
+T :- Input type parameter
+R :- return type
+
+Note :- Unlike Predicate which can only return either true or false. Function can return any thing.
+
+
+
+
