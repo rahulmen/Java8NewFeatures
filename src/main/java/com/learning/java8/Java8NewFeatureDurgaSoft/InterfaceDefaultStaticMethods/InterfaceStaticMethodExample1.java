@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.InterfaceDefaultStaticMethods;
 
 /*
 From Java 1.8 we can run interface also because we can define static method in interface from Java 1.8.

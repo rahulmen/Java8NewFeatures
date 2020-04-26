@@ -1,9 +1,8 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.LambdaExpressionInroduction;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.TreeMap;
 
 public class LamdbaExpressionComparatorForSelfDefinedClass {
 

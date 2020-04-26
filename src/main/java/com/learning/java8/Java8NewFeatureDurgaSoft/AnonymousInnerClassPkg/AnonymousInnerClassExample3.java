@@ -1,6 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
-
-import javax.imageio.stream.ImageInputStream;
+package com.learning.java8.Java8NewFeatureDurgaSoft.AnonymousInnerClassPkg;
 
 @FunctionalInterface
 interface Test {

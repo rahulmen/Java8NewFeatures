@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.InterfaceDefaultStaticMethods;
 
 interface Left {
     default void m1() {

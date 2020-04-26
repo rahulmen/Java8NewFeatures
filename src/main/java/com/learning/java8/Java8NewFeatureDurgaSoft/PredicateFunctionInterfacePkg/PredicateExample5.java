@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.PredicateFunctionInterfacePkg;
 
 /*
 Predicate example to print names which starts with K

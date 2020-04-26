@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.AnonymousInnerClassPkg;
 
 interface interface1 {
     public void m1();

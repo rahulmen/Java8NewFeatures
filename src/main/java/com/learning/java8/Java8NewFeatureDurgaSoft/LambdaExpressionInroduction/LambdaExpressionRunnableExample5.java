@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.LambdaExpressionInroduction;
 
 public class LambdaExpressionRunnableExample5 {
 

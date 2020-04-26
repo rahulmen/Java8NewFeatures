@@ -3,7 +3,7 @@
 Program to check whether the given collection is empty or not usinf predicate Lambda expression
  */
 
-package com.learning.java8.Java8NewFeatureDurgaSoft;
+package com.learning.java8.Java8NewFeatureDurgaSoft.PredicateFunctionInterfacePkg;
 
 import java.util.ArrayList;
 import java.util.Arrays;
