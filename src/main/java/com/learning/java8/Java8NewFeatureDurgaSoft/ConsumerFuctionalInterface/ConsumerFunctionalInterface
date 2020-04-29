@@ -1,0 +1,7 @@
+If we want to perform any operation and dont want any return type then we should go for Consumer Functional Interface.
+It has one abstract method that is accept.
+
+@FunctionalInterface
+interface Consumer{
+void accept(T t);
+}
