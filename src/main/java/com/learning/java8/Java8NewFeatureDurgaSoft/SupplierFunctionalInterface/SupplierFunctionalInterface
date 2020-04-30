@@ -1,0 +1,14 @@
+Supplier Function Interface is used when we want to get something.
+
+interface Supplier{
+R get<R>();
+}
+
+R :- Return type which we gonna get from Supplier.
+
+Note :- Supplier and Consumer are opposite of each other just like consumer take input parameter and return Void.
+Similarly supplier wont take any argument and return something.
+
+Supplier Functional Interface Wont contain any default and static method.
+
+
