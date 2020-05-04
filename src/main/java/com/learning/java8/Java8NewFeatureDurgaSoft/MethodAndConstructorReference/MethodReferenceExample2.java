@@ -1,4 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft.MethodReference;
+package com.learning.java8.Java8NewFeatureDurgaSoft.MethodAndConstructorReference;
 
 public class MethodReferenceExample2 {
 
