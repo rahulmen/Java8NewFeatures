@@ -1,0 +1,11 @@
+1. Method Reference is the alternative for Lambda Expression.
+
+2. If we want to implment abstract method defined in a functional interface one way is to write lambda Expression.
+   And another way is to write a method with same arguments into a class and perform method calling using double
+   semi-colon operator ::
+
+   Syntax:-
+   <InterfaceName> inter = <ClassName>::<method name>
+   Interface interf = Test::m2;
+
+   m2 is a static method.
