@@ -1,0 +1,82 @@
+INTRODUCTION
+=============
+1. If we want to perform certain operation on Collection Object then we should go for Java Stream introduced in 1.8V.
+
+2. java.io.Streams is different from java.util Streams concept introduced in 1.8V
+
+3. If we want to process Object stored in collection.
+Collection :- Homogenous Object stored in a single entity.
+
+If we want to perform bulk operation on Object stored in Collection then we can go for Java Stream.
+
+DIFFERENCE BETWEEN COLLECTION AND STREAMS
+============================================
+COLLECTION :- A group of individual Object as a Single Entity
+
+JAVA.UTIL.STREAMS :- If we want to process Object(Bulk Operation) stored in Collection we can go for Stream.
+
+Example :- If we have a collection of 1000 Students Object and we have to find students whose marks are greater than 80.
+For this type of Scenario Stream is best suitable.
+
+HOW TO CREATE STREAM OBJECT
+===============================
+Stream s = collectionObject.stream();
+
+stream() is the default method added in Collection Interface in 1.8 V which return Stream Interface Object
+present in java.util.Stream Package.
+
+Once We get the Stream object by using stream reference we can do processing on Collection Object.
+
+
+PROCESSING ON COLLECTION OBJECT USING STREAM REFERENCE
+========================================================
+
+Processing contains two steps.
+1. Configuration.
+2. Processing
+
+CONFIGURATION
+===============
+Configuration also consist of two ways.
+1. filtering mechanism
+2. mapping mechanism
+
+Filtering Mechanishm :-
+----------------
+1. If we want to filter elements from the Collection based on some boolean condiiton then we should go for filtering.
+
+2. We can configure filtering by using filter() method present in Stream Interface
+
+Complete Prototype :-
+public Stream filter(Predicate<T> predicate)
+
+Predicate<T> predicate :- It can be boolean valued function or Lamdba Expression
+
+Example :- Stream s = c.stream().filter(i->i%2==0);
+
+Mapping Mechanism :-
+------------------
+1. If we want to create separate new Object for every Object present in the Collection.
+
+2. We can configure mapping by using map() method present in Stream Interface.
+
+Complete ProtoType:-
+public Stream map(Function<T,R> function);
+
+Example :-
+Stream s = c.stream().map(i->i*2);
+
+
+
+
+
+
+Difference Between filter() and map()
+
+
+
+
+
+
+
+
