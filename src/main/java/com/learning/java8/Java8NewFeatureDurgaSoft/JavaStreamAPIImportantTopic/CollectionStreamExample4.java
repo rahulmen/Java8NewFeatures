@@ -33,7 +33,6 @@ public class CollectionStreamExample4 {
     };
 
 
-
     private static List<Student> studentArrayList = new ArrayList<>();
 
     public static void main(String[] args) {
