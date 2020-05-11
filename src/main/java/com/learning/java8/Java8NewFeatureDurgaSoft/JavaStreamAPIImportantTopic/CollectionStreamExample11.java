@@ -15,6 +15,18 @@ class Weather{
         this.temperature = temperature;
         this.city = city;
     }
+
+    public Weather getCity(){
+        System.out.println(this.city);
+        return this;
+    }
+
+    public Weather gettemperature(){
+        System.out.println(this.temperature);
+        return this;
+    }
+
+    public void build(){}
 }
 
 public class CollectionStreamExample11 {
@@ -41,10 +53,10 @@ public class CollectionStreamExample11 {
 
     public static void main(String[] args) {
         populate();
-        System.out.println(weatherTreeMap);
         //Filter those cities where temperature is between 20 to 30 degree
-        Set<String> set= weatherTreeMap.entrySet().stream().filter(e->e.getValue().temperature<=30 && e.getValue().temperature>20).map(e->e.getKey().value).collect(Collectors.toSet());
-        System.out.println(set);
+        weatherTreeMap = weatherTreeMap.entrySet().stream().filter(e->e.getValue().temperature<=30 && e.getValue().temperature>20)
+                .collect(Collectors.toMap(e->e.getKey(),e->e.getValue()));
+        weatherTreeMap.entrySet().forEach(e->e.getValue().getCity().gettemperature().build());
     }
 
     private static void populate() {
