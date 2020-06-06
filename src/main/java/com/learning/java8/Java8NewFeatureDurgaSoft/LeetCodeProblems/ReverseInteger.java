@@ -37,7 +37,7 @@ public class ReverseInteger {
 
     public static void main(String[] args) {
 
-        System.out.println(new ReverseInteger().reverse(1534236469));
+        System.out.println(new ReverseInteger().reverse(-56767));
 
 
     }

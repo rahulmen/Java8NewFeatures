@@ -1,0 +1,14 @@
+THREAD GROUP :-
+
+1. Thread group contains a group of thread and sub thread group.
+2. Biggest advantage to maintain thread in Thread group is we can perform common operation very easily.
+
+ThreadGroup is a java class present in java.lang package and it is a direct child class of Object.
+
+Constructors:-
+
+1. ThreadGroup g = new ThreadGroup(String groupName);
+
+
+
+
