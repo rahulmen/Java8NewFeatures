@@ -1,0 +1,15 @@
+ThreadPool :-
+
+1.Creating a new thread for every job may create problem and memory problems to overcome this we should go for thread pool.
+2 Thread Pool is a pool of already created thread ready to do our job.
+3. Java 1.5V introduces thread pool framework to implement thread pools
+4. Thread Pool frameWork also knows as Executor FrameWork.
+5. We can create thread pool as follows
+ExecutorService service = Executors.newFixedThreadPool(3);
+
+6. We can submit a runnable Job by using submit() method
+service.submit(job);
+
+7. We can shut down executor Service by using shutDown method
+service.shutdown();
+
