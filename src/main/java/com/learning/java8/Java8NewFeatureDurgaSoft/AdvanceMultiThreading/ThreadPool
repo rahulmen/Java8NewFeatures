@@ -13,3 +13,26 @@ service.submit(job);
 7. We can shut down executor Service by using shutDown method
 service.shutdown();
 
+Note :-
+While designing Web server and application server we can use thread pool concepts
+
+8. Runnable interface contains run() method whose return type is void and for checked Exception can only be handle in try-catch block.
+
+9. But call() method in callable interface return type is Object and directly we can handle checked exception using throws Exceotion KeyWord.
+
+Callable and Future
+========================
+
+1. In the case of Runnable Job thread wont return anything after completing the job
+2. If a thread is required to return some result after execution then we should go for callable.
+3. Callable interface contains only one method call().
+
+public Object call() throws Exception
+
+4. If we submit a callable Object to Executor and after completing the Job thread return an Object of a Type Future.
+5. Future Object can a used to retrive the result from callable Job.
+
+
+
+
+

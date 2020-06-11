@@ -10,9 +10,11 @@ public class ThreadPoolExample1 {
 
     public static void main(String[] args) {
 
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
-
         String[] names = {"Dharmo","Ramesh","Rahul","Hemant","Liyan","Jyoti","Yamini"};
+
+
+        ExecutorService executorService = Executors.newFixedThreadPool(names.length);
+
 
         Runnable r =()->{
             System.out.println(Thread.currentThread().getName()+" Executing for "+ names[(int)(Math.random()*names.length)]);
