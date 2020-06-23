@@ -27,6 +27,7 @@ public class BinaryTreeNodeExample1 {
         binaryTreeNodeExample1.top.right=new Node(5);
         binaryTreeNodeExample1.top.left.left=new Node(6);
 
+        System.out.println(binaryTreeNodeExample1.top.data);
 
 
     }
