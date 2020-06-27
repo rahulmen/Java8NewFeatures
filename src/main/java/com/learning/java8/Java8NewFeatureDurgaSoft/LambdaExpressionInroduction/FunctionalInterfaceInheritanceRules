@@ -1,7 +1,6 @@
 Rules :-
 
 
-
 1. If parent functional interface contain one abstract method then child interface is also functional Interface.
 
 @FunctionalInterface
