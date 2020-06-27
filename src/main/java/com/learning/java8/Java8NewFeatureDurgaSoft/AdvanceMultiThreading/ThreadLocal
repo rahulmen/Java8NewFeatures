@@ -1,0 +1,172 @@
+ThreadLocal
+=============
+
+1.ThreadLocal class provides thread local variables.
+2.ThreadLocal class maintains values per thread basis.
+3. Each ThreadLocal object maintain a separate value like userId , TransactionId etc...
+    for each thread that access that Object.
+4. Threads can access its local value can manipulates its value and even can remove its value.
+5. In every part of the code which is executed by the thread we can access its local variable.
+
+    Example :- Consider a servlet which invokes some business methods we have a requirement to generate a unique
+               transactionId for each and every request and we have to pass this transaction id to the business methods
+               for this requirement we can use ThreadLocal to maintain a separate transactionId for every request that is
+               for every thread.
+
+
+1. ThreadLocal class introduced in 1.2V and enhanced in 1.5V .
+2. ThreadLocal can be associated with thread scope.
+3. Total Code which is executed by the thread has access to the corresponding thread local variable.
+4. A thread can access its own local variable and cant access other thread local variables.
+5. Once thread enter into dead state all its local variables are by default eligible for garbage collection.
+
+Constructor:-
+
+1. ThreadLocal tl = new ThreadLocal();  //creates a ThreadLocal variable
+
+Methods:-
+
+1. Object get(); //returns the value of ThreadLocal Variable associated with current Thread
+
+2. Object initialValue(); //returns initial value of thread local variable associated with current thread.
+                          //Default implementation of this method returns null.
+                          //To return customise initialValue we have to override this method.
+
+3. void set(Object newValue); //To set a new Value
+
+4. void remove();  //To remove the value of ThreadLocal variable associated with current thread.
+                   //It is newly added method in 1.5V after removal if we are trying to access it will be
+                   //reinitialise once again by invoking its initial value method.
+
+
+Program 1
+==========
+
+public class ThreadLocalDemo1 {
+    public static void main(String[] args) {
+        ThreadLocal<String> threadLocal = new ThreadLocal();
+        System.out.println(threadLocal.get()); //executed by main thread but no default value configured so will return null
+        threadLocal.set("Rahul Mendiratta");
+        System.out.println(threadLocal.get()); //Rahul Mendiratta
+        threadLocal.remove();
+        System.out.println(threadLocal.get());//null
+    }
+}
+
+Program 2
+==========
+
+public class ThreadLocalDemo1 {
+    public static void main(String[] args) {
+
+    //Creating anonymous Inner Class for threadLocal and Overiding initialValue() method
+
+        ThreadLocal<String> threadLocal = new ThreadLocal(){
+            public Object initialValue(){
+                return "Rahul Mendiratta";
+            }
+        };
+        System.out.println(threadLocal.get()); //Rahul Mendiratta
+        threadLocal.set("Rahul Mendiratta Overrided Value");
+        System.out.println(threadLocal.get()); //Rahul Mendiratta Overrided value
+        threadLocal.remove();
+        System.out.println(threadLocal.get());// Rahul Mendiratta
+    }
+}
+
+Program 3
+===========
+
+class CustomerThread extends Thread{
+
+    private String threadName;
+    private static int customerId;
+
+    private static ThreadLocal<Integer> threadLocal = new ThreadLocal(){
+        public Object initialValue(){
+          return ++customerId;
+        };
+    };
+
+    CustomerThread(String name){
+        this.threadName=name;
+    }
+
+    @Override
+    public void run(){
+        System.out.println(Thread.currentThread().getName()+" executing with CustomerId:"+threadLocal.get());
+    }
+}
+
+public class ThreadLocalDemo2 {
+
+    public static void main(String[] args) {
+
+        CustomerThread customerThread1 = new CustomerThread("CustomerThread1");
+        CustomerThread customerThread2 = new CustomerThread("CustomerThread2");
+        CustomerThread customerThread3 = new CustomerThread("CustomerThread3");
+        CustomerThread customerThread4 = new CustomerThread("CustomerThread4");
+        customerThread1.start();
+        customerThread2.start();
+        customerThread3.start();
+        customerThread4.start();
+    }
+}
+
+In above program for every customer thread a separate customerId will be maintained by Thread local Object
+
+ThreadLocal With Respect To Inheritance
+=========================================
+
+1. Parent thread Threadlocal variable by default not avalaible to the child thread if we want to make parent threads ThreadLocal values
+   avalaible to the Child thread then we should go for InheritableThreadLocal Class.
+2. By default Child thread values is exactly same as parent Thread Values but we can provide customise value for Child thread by overriding childValue() method
+
+Constructor:-
+1. InheritableThreadLocal tl = new InheritableThreadLocal();
+
+Methods:-
+1. InheritableThreadLocal is a child class of ThreadLocal and hence all methods present in ThreadLocal is by default avalaible to InheritableThreadLocal .
+2. In addition to these method it contains only method :-
+   public Object childValue(Object parentValue);
+
+Program 1
+===========
+
+class ParentThread extends Thread{
+
+    protected static InheritableThreadLocal inheritableThreadLocal = new InheritableThreadLocal(){
+        @Override
+        public Object childValue(Object parent){
+            return "CC";
+        }
+    };
+
+    @Override
+    public void run(){
+        inheritableThreadLocal.set("PP");
+        System.out.println(Thread.currentThread().getName()+" Executing with initialValue "+inheritableThreadLocal.get());
+        ChildThread childThread = new ChildThread();
+        childThread.start();
+    }
+}
+
+class ChildThread extends Thread{
+    @Override
+    public void run(){
+     System.out.println(Thread.currentThread().getName()+" Executing with initialValue "+ParentThread.inheritableThreadLocal.get());
+    }
+}
+
+public class ThreadLocalDemo3 {
+    public static void main(String[] args) {
+     ParentThread parentThread = new ParentThread();
+     parentThread.start();
+    }
+}
+
+
+
+
+
+

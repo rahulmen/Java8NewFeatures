@@ -2,23 +2,23 @@ package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructures.Recursion;
 
 public class FactorialRecursionProblem {
 
+
     int sum=1;
 
-    public int getFractionvalue(int num){
+    public long Factorial(int num){
         if(num==0){
-            return sum;
+            return 1;
         }else{
-            sum=sum*num;
-            num = num-1;
-            getFractionvalue(num);
+            return num*Factorial(num-1);
         }
-        return sum;
     }
+
 
     public static void main(String[] args) {
 
-        System.out.println(new FactorialRecursionProblem().getFractionvalue(5));
+        System.out.println(new FactorialRecursionProblem().Factorial(9));
 
 
     }
+
 }
