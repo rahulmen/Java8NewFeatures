@@ -6,7 +6,7 @@ import java.util.function.ToIntFunction;
 
 public class IntFunctionExample1 {
 
-    public static IntFunction intFunction = i->i*i;
+    public static IntFunction intFunction = i->i+i;
     public static ToIntFunction<String> toIntFunction = s->s.length();
     public static IntToDoubleFunction intToDoubleFunction = i->Math.sqrt(i);
 
