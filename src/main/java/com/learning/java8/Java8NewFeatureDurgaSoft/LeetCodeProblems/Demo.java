@@ -7,8 +7,18 @@ import java.util.List;
 public class Demo {
 
     public static void main(String[] args) {
-
-        System.out.println(~5);
-
+      char ch = 'a';
+        byte b = 20;
+        byte d = 30;
+        int a = 20;
+        byte e = (byte)(b+d);
+        byte c = (byte)(b+a); //max(int,byte,int)
+        char ch1 =(char)(ch+a);
+        System.out.println(a+b);
+        System.out.println(c);
+        System.out.println(ch+a);
+        System.out.println(ch1);
+        System.out.println(10/-0.0);
+        System.out.println(10<Float.NaN);
     }
 }
