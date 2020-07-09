@@ -20,5 +20,13 @@ public class Demo {
         System.out.println(ch1);
         System.out.println(10/-0.0);
         System.out.println(10<Float.NaN);
+        System.out.println(234&1); //TO CHECK IF NUMBER IS EVEN OR NOT
+
+        /*
+        EVEN LAST LAST BIT IS 0 AND ODD NUMBER LAST BIT IS 1
+         */
+
+
+
     }
 }

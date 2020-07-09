@@ -35,13 +35,11 @@ to find 1s compliment
 
 Note :- The most significant bit act as sign bit 0 means positive number and 1 means negative number.
 
-
  */
 
 public class BitWiseComplementOperator {
 
     public static void main(String[] args) {
-        System.out.println(~4);
-        System.out.println(7&1);
+        System.out.println(~4); //-5
     }
 }
