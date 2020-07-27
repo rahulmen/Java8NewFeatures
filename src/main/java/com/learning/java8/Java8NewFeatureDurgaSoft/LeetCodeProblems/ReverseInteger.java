@@ -2,7 +2,7 @@ package com.learning.java8.Java8NewFeatureDurgaSoft.LeetCodeProblems;
 
 public class ReverseInteger {
 
-    public Long reversedd(int x) {
+    public Long reverse1(int x) {
         String number ="";
         boolean isNegative = false;
         if(x<0){
@@ -24,6 +24,8 @@ public class ReverseInteger {
     }
 
     public int reverse(int x) {
+        System.out.println(Integer.MIN_VALUE);
+        System.out.println(Integer.MAX_VALUE);
         int rev = 0;
         while (x != 0) {
             int pop = x % 10;
@@ -37,7 +39,11 @@ public class ReverseInteger {
 
     public static void main(String[] args) {
 
-        System.out.println(new ReverseInteger().reverse(-56767));
+        System.out.println(new ReverseInteger().reverse1(Integer.MAX_VALUE));
+
+        //2147483647
+
+        //4638474127
 
 
     }
