@@ -1,6 +1,4 @@
-package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructures;
-
-import java.util.LinkedList;
+package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructures.LinkedList;
 
 class ListNode{
     ListNode next;

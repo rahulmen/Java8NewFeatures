@@ -6,9 +6,7 @@ public class SortIntegerByNumberOfOneBits {
 
     public int[] sortByBits(int[] arr) {
         int[] temp = new int[arr.length];
-
         Map<Integer, List<Integer>> map = new TreeMap<>();
-
         for (int i = 0; i < temp.length; i++) {
             if (arr[i] == 0) {
                 if (map.containsKey(0)) {
@@ -86,7 +84,6 @@ public class SortIntegerByNumberOfOneBits {
     public static void main(String[] args) {
 
         System.out.println(Arrays.toString(new SortIntegerByNumberOfOneBits().sortByBits(new int[]{0,1,2,3,4,5,6,7,8})));
-
 
     }
 }
