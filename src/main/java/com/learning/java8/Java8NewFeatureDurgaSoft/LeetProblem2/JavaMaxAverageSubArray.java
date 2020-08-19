@@ -11,8 +11,8 @@ public class JavaMaxAverageSubArray {
         for(int i=0;i<nums.length;i++){
             sum+=nums[i];
             if(i>=k-1){
-                if(sum>maxSum){
-                    maxSum=sum;
+                if(sum>maxSum) {
+                    maxSum = sum;
                 }
                 sum=sum-nums[j];
                 j++;
