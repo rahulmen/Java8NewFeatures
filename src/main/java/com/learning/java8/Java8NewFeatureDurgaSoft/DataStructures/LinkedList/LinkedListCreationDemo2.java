@@ -1,9 +1,11 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructures.LinkedList;
 
- class ListNode1{
+import java.util.List;
 
-     private ListNode1 next;
-     private int data;
+class ListNode1{
+
+     public ListNode1 next;
+     public int data;
 
      public ListNode1(int data) {
          this.data = data;
@@ -132,9 +134,49 @@ public class LinkedListCreationDemo2 {
 
      }
 
+     public static ListNode1 mergeInBetween(ListNode1 listNode1,ListNode1 listNode2,int a ,int b){
+
+         int count =1;
+         ListNode1 temp = listNode1;
+         ListNode1 temp1 = null;
+         while(count<a){
+             temp=temp.next;
+             count++;
+         }
+         temp1=temp;
+         temp=listNode2;
+
+         while(count<b){
+             temp1=temp1.next;
+             count++;
+         }
+
+         while(temp.next!=null){
+             temp=temp.next;
+         }
+
+         temp.next=temp1.next;
+
+         return listNode1;
+
+     }
+
+    ListNode1 reversed(ListNode1 head){
+       ListNode1 prev = null;
+       ListNode1 temp = null;
+
+       while(head!=null) {
+           temp = head.next;
+           head.next = prev;
+           prev = head;
+           head = temp;
+       }
+       return prev;
+    }
+
     public static void main(String[] args) {
 
-        LinkedListCreationDemo2 linkedListCreationDemo2 = new LinkedListCreationDemo2();
+        /*LinkedListCreationDemo2 linkedListCreationDemo2 = new LinkedListCreationDemo2();
         linkedListCreationDemo2.insertAtBegin(2);
         System.out.println(linkedListCreationDemo2);
         linkedListCreationDemo2.insertAtBegin(1);
@@ -151,7 +193,28 @@ public class LinkedListCreationDemo2 {
         linkedListCreationDemo2.insertAtLast(5);
         System.out.println(linkedListCreationDemo2);
         System.out.println("Data Removed from Position 2: "+linkedListCreationDemo2.removeFromMiddle(2));
-        System.out.println(linkedListCreationDemo2);
+        System.out.println(linkedListCreationDemo2);*/
+
+        LinkedListCreationDemo2 l1 = new LinkedListCreationDemo2();
+        l1.insertAtBegin(1);l1.insertAtLast(2);l1.insertAtLast(3);l1.insertAtLast(4);l1.insertAtLast(5);
+        LinkedListCreationDemo2 l2 = new LinkedListCreationDemo2();
+        l2.insertAtBegin(6);l2.insertAtLast(7);l2.insertAtLast(8);l2.insertAtLast(9);
+
+        l1.head = l1.reversed(l1.head);
+        System.out.println(l1);
+
+
+        System.out.println(l1.reversed(l1.head));
+/*
+        System.out.println(l1);
+        System.out.println(l2);
+        ListNode1 output = mergeInBetween(l1.head,l2.head,2,3);
+        l1.head = output;
+        System.out.println(l1)*/;
+
+
+
+
 
     }
 
