@@ -55,7 +55,12 @@ public class DLLCreationDemo2 {
     }
 
     public void insertLast(int data){
-
+        if(head==null){
+            head=new DLLNode1(data);
+            head.previous=null;
+            head.next=null;
+            return;
+        }
         DLLNode1 newNode = new DLLNode1(data);
         DLLNode1 temp = head;
         while(temp.next!=null)temp=temp.next;
@@ -78,6 +83,45 @@ public class DLLCreationDemo2 {
        }
     }
 
+    public int deleteFirst(){
+        if(head==null){
+            throw new RuntimeException("Head Cant be null");
+        }
+        int data = head.data;
+        head = head.next;
+        if(head!=null){
+        head.previous=null;
+        }
+        return data;
+    }
+
+    public int deleteLast(){
+        if(head==null){
+            throw new RuntimeException("Head Cant be null");
+        }
+        DLLNode1 temp = head;
+        while(temp.next.next!=null){
+            temp=temp.next;
+        }
+        int data = temp.next.data;
+        temp.next=temp.next.next;
+        return data;
+    }
+
+    public int deleteMiddle(DLLNode1 node){
+        if(node==null){
+            throw new RuntimeException("Node Cant be null");
+        }
+        int data = node.next.data;
+        if(node.next!=null) {
+            node.next = node.next.next;
+        }
+        if(node.next!=null){
+            node.next.previous=node;
+        }
+        return data;
+    }
+
 
 
     public static void main(String[] args) {
@@ -86,12 +130,23 @@ public class DLLCreationDemo2 {
         System.out.println(dllCreationDemo2);
         dllCreationDemo2.insertFirst(1);
         System.out.println(dllCreationDemo2);
+        dllCreationDemo2.deleteFirst();
+        System.out.println(dllCreationDemo2);
         dllCreationDemo2.insertLast(3);
         System.out.println(dllCreationDemo2);
         dllCreationDemo2.insertMiddle(head,2);
         System.out.println(dllCreationDemo2);
         dllCreationDemo2.insertMiddle(0,head.next);
         System.out.println(dllCreationDemo2);
-
+        System.out.println(dllCreationDemo2.deleteFirst());
+        System.out.println(dllCreationDemo2);
+        dllCreationDemo2.insertMiddle(head,1);
+        dllCreationDemo2.insertMiddle(head,2);
+        dllCreationDemo2.insertMiddle(head,3);
+        dllCreationDemo2.insertMiddle(head,4);
+        System.out.println(dllCreationDemo2.deleteLast());
+        System.out.println(dllCreationDemo2);
+        System.out.println(dllCreationDemo2.deleteMiddle(head.next.next));
+        System.out.println(dllCreationDemo2);
     }
 }
