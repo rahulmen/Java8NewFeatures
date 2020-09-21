@@ -1,8 +1,5 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.PrimitiveTypeFunctionalInterface;
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.function.DoubleSupplier;
 import java.util.function.IntSupplier;
 import java.util.function.LongSupplier;

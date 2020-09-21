@@ -5,8 +5,6 @@ It is a child interface of Function<T,R>
 User should go from UnaryOperator Function if both input and return type is same.
  */
 
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.function.DoubleUnaryOperator;
 import java.util.function.IntUnaryOperator;
 import java.util.function.LongUnaryOperator;

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite">
+    <test name="Java8NewFeatures">
+        <classes>
+            <class name="com.learning.java8.Java8NewFeatureDurgaSoft.SecuronixInterview.Tests.LoginTest"/>
+        </classes>
+    </test> <!-- Java8NewFeatures -->
+</suite> <!-- Default Suite -->
