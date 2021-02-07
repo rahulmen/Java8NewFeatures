@@ -1,0 +1,6 @@
+1. Check for high probability Channel.
+2. Check for User Type.
+3. Check for Pass rate for the email.
+4. Mail should be send as per the pass rate of the channel.
+5. We can send email to multiple user at the same time using any high probability channel.
+

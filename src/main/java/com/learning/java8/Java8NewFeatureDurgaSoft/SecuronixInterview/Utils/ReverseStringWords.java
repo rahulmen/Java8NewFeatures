@@ -23,5 +23,4 @@ public class ReverseStringWords {
     public static void main(String[] args) {
         System.out.println(new ReverseStringWords().reverseString("my na@me i%&*s* r@ahu?_?l mendir@at&ta"));
     }
-
 }
