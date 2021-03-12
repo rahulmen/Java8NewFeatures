@@ -8,6 +8,7 @@ public class JODAExample2 {
     public static void main(String[] args) throws Exception{
 
         LocalDate localDate = LocalDate.now();
+        System.out.println(LocalDate.now().toEpochDay());
         System.out.println("Day:-"+localDate);
         System.out.println("Date:-"+localDate.getDayOfMonth());
         System.out.println("Month:-"+localDate.getMonthValue());

@@ -1,13 +1,14 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.AdvanceMultiThreading;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class RenterrentLockExample4 {
 
     public static void main(String[] args){
 
-        ReentrantLock reentrantLock = new ReentrantLock();
+        Lock reentrantLock = new ReentrantLock();
 
         Runnable r = ()-> {
             try {
