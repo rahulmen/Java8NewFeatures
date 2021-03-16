@@ -16,6 +16,48 @@ public class Demo {
     }
 
 
+    public boolean canThreePartsEqualSum(int[] A) {
+
+
+        int partition = (A.length/3)+1;
+
+        int j = partition;
+        int k = (partition*2);
+        Integer pivot = 1;
+
+        System.out.println(j);
+        System.out.println(k);
+
+        int firstHalfSum =0;
+        int secondHalfSum =0;
+        int thirdHalfSum = 0;
+
+
+        do{
+            for(int i=0;i<A.length;i++){
+                if(i<j){
+                    firstHalfSum+=A[i];
+                }else if(i>j && i<k){
+                    secondHalfSum+=A[i];
+                }else{
+                    thirdHalfSum+=A[i];
+                }
+            }
+            System.out.println(firstHalfSum);
+            System.out.println(secondHalfSum);
+            System.out.println(thirdHalfSum);
+
+            if(firstHalfSum==secondHalfSum && secondHalfSum == thirdHalfSum){
+                return true;
+            }
+        }while(false);
+
+
+        return false;
+
+    }
+
+
     public static void main(String[] args) {
        m1("ABC");
        m1(null);

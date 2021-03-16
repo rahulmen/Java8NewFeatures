@@ -1,7 +1,8 @@
 FUNCTIONAL INTERFACE
 ======================
 
-1. Function Interface are those interface which contain only single abstract method but that interface can contain any number of default
+1. Function Interface are those interface which contain only single abstract method
+    but that interface can contain any number of default
    and static method.
 
    Example :- Runnable :- Only run() method

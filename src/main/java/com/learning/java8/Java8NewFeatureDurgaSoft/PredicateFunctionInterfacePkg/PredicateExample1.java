@@ -10,6 +10,11 @@ public class PredicateExample1 {
         System.out.println(predicate.test("Rahul"));
         System.out.println(predicate.test("Rahul Mendiratta"));
 
+
+        Predicate<String> predicate1 = Predicate.isEqual("Rahul");
+
+        System.out.println(predicate1.test("Rahul"));
+
     }
 
 
