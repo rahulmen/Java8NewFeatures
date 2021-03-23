@@ -32,6 +32,8 @@ public class CheckIfStringisPalindrome {
 
         System.out.println(new CheckIfStringisPalindrome().isPalindrome("0P"));
 
+        System.out.println();
+
 
     }
 
