@@ -26,6 +26,20 @@ class ListNode1{
      public void setData(int data) {
          this.data = data;
      }
+
+    public String toString(ListNode1 node){
+        ListNode1 temp = node;
+        String s="[";
+        while(temp!=null) {
+            if (temp.getNext() == null) {
+                s += temp.getData();
+                break;
+            }
+            s += temp.getData() + ",";
+            temp=temp.getNext();
+        }
+        return s+"]";
+    }
  }
 
 
@@ -165,11 +179,46 @@ public class LinkedListCreationDemo2 {
        ListNode1 prev = null;
        ListNode1 temp = null;
 
+       int i=1;
        while(head!=null) {
+           System.out.println("Enter in Loop "+i);
+
+           System.out.println("Head : "+head.toString(head));
+
            temp = head.next;
+           if(temp!=null)
+               System.out.println("{Set temp to head.next} Temp : " + temp.toString(temp));
+           else
+               System.out.println("Temp is null because head.next is null" );
+
+
            head.next = prev;
+           if(head.next!=null) {
+               System.out.println("{Set Head.NEXT to prev} Head.NEXT " + head.next.toString(head.next));
+               System.out.println("Now Head :is " + head.toString(head));
+           }
+           else {
+               System.out.println("Set Head.NEXT to prev Head.NEXT is null because previous is null");
+               System.out.println("Head : " + head.toString(head));
+           }
+
+
            prev = head;
+           if(prev!=null)
+               System.out.println("{Set Prev to head} Prev : " + prev.toString(prev));
+           else
+               System.out.println("Prev is null because head is null" );
+
+
            head = temp;
+           if(head!=null)
+               System.out.println("{Set Head to temp} Head : " + head.toString(head));
+           else
+               System.out.println("Head is null because temp is null" );
+
+
+           System.out.println("End of Loop "+i);
+           i++;
        }
        return prev;
     }
@@ -200,12 +249,11 @@ public class LinkedListCreationDemo2 {
         LinkedListCreationDemo2 l2 = new LinkedListCreationDemo2();
         l2.insertAtBegin(6);l2.insertAtLast(7);l2.insertAtLast(8);l2.insertAtLast(9);
 
-        l1.head = l1.reversed(l1.head);
         System.out.println(l1);
 
-
-        System.out.println(l1.reversed(l1.head));
-/*
+        l1.head = l1.reversed(l1.head);
+        System.out.println(l1);
+        /*
         System.out.println(l1);
         System.out.println(l2);
         ListNode1 output = mergeInBetween(l1.head,l2.head,2,3);

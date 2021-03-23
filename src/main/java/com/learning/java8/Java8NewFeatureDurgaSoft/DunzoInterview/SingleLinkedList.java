@@ -1,5 +1,7 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.DunzoInterview;
 
+import java.util.Stack;
+
 class SLLNode{
 
     int data;
@@ -69,6 +71,20 @@ public class SingleLinkedList {
         return false;
     }
 
+    public void reverseLinkedList(){
+
+        SLLNode temp = null;
+        SLLNode prev = null;
+
+        while(head!=null){
+            temp=head.next;
+            head.next=prev;
+            prev=head;
+            head=temp;
+        }
+        head=prev;
+    }
+
     public static void main(String[] args) {
 
         SingleLinkedList singleLinkedList = new SingleLinkedList();
@@ -81,6 +97,10 @@ public class SingleLinkedList {
         singleLinkedList.insertLast(4);   //head->1->3
         System.out.println(singleLinkedList);
         System.out.println(singleLinkedList.isDuplicate());
+        singleLinkedList.reverseLinkedList();
+        System.out.println(singleLinkedList);
+
+
 
     }
 
