@@ -3,7 +3,7 @@ package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructure2021;
 public class QueueImpl1 {
 
     int[] array;
-    int capacity=2;
+    int capacity=5;
     int size=0,front=0,rear=0;
 
     QueueImpl1(){
@@ -16,12 +16,11 @@ public class QueueImpl1 {
 
     public void enQueue(int data){
         if(size==capacity){
-            expand();
-            //throw new RuntimeException("Queue Overflow Condition");
+            throw new RuntimeException("Queue Overflow Condition");
         }
         size++;
-        array[rear%capacity]=data;
-        rear++;
+        array[rear]=data;
+        rear=(rear+1)%capacity;
     }
 
     private void expand() {
@@ -38,8 +37,8 @@ public class QueueImpl1 {
             throw new RuntimeException("Queue is Empty");
         }
         int data = array[front%capacity];
-        array[front%capacity]=Integer.MIN_VALUE;
-        front++;
+        array[front]=Integer.MIN_VALUE;
+        front=(front+1)%capacity;
         size--;
         return data;
     }
@@ -59,10 +58,14 @@ public class QueueImpl1 {
     @Override
     public String toString(){
         String s = "[";
-        for(int i = rear-1;i>front;i--){
-            s+=array[i%capacity]+",";
+        for(int i = 0;i<size;i++){
+            if(i==size-1){
+                s+=array[(front+i)%capacity]+"]";
+                break;
+            }
+            s+=array[(front+i)%capacity]+",";
         }
-        return s+=array[front]+"]";
+        return s;
     }
 
     public static void main(String[] args) {
