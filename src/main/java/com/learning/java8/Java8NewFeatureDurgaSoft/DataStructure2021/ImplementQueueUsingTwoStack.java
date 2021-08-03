@@ -1,6 +1,9 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.DataStructure2021;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
+import java.util.stream.Collectors;
 
 public class ImplementQueueUsingTwoStack {
 
@@ -28,21 +31,27 @@ public class ImplementQueueUsingTwoStack {
 
     public static void main(String[] args) {
 
-          ImplementQueueUsingTwoStack implementQueueUsingTwoStack = new ImplementQueueUsingTwoStack();
-            implementQueueUsingTwoStack.enQueue(1);
-            implementQueueUsingTwoStack.enQueue(2);
-            implementQueueUsingTwoStack.enQueue(3);
-            implementQueueUsingTwoStack.enQueue(4);
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            implementQueueUsingTwoStack.enQueue(5);
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
-            System.out.println(implementQueueUsingTwoStack.deQueue());
+          //ImplementQueueUsingTwoStack implementQueueUsingTwoStack = new ImplementQueueUsingTwoStack();
+          HashMap<Integer,Integer> map = new HashMap<>();
+          map.put(1,2);map.put(2,3);map.put(3,4);
 
+          System.out.println(new HashMap<Integer,Integer>().entrySet().stream().filter(e->e.getKey()>=1 && e.getValue()>0).
+                    collect(Collectors.toList()).get(0));
+
+//          implementQueueUsingTwoStack.enQueue(1);
+//            implementQueueUsingTwoStack.enQueue(2);
+//            implementQueueUsingTwoStack.enQueue(3);
+//            implementQueueUsingTwoStack.enQueue(4);
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            implementQueueUsingTwoStack.enQueue(5);
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//            System.out.println(implementQueueUsingTwoStack.deQueue());
+//
 
 
 

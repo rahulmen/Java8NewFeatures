@@ -1,8 +1,6 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.LeetProblem3;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Demo {
 
@@ -59,19 +57,32 @@ public class Demo {
 
 
     public static void main(String[] args) {
-       m1("ABC");
-       m1(null);
+//       m1("ABC");
+//       m1(null);
+//
+//       List<String> list = new ArrayList<>();
+//
+//       list.add("Push");
+//        list.add("Push");
+//        list.add("Push");
+//        list.add("Push");
+//
+//        String[] strings = list.toArray(new String[0]);
+//
+//        System.out.println(Arrays.toString(strings));
 
-       List<String> list = new ArrayList<>();
+        Map<Integer,Integer> map = new HashMap<>();
+        map.put(0,2);
+        map.put(1,1);
+        map.put(2,4);
+        map.put(3,5);
+        map.put(4,3);
 
-       list.add("Push");
-        list.add("Push");
-        list.add("Push");
-        list.add("Push");
+        if(map.containsValue(2)){
 
-        String[] strings = list.toArray(new String[0]);
+        }
 
-        System.out.println(Arrays.toString(strings));
+
 
 
 
