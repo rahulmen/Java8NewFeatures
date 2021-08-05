@@ -4,16 +4,13 @@ public class LongestPalindrome {
 
     public String longestPalindrome(String s) {
 
-        //int length = 0;
         String out = null;
-        //int i = 0;int j = s.length()-1;
         int k = 0;int l = s.length()-1;
         boolean left = false;boolean right = false;
         int count=0;
 
         while(k<=l){
             if(s.charAt(k)==s.charAt(l)){
- //               length++;
                 k++;l--;
                 count++;
             }else {
