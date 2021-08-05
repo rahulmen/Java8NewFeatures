@@ -1,5 +1,9 @@
 package com.learning.java8.Java8NewFeatureDurgaSoft.LeetProblem3;
 
+import java.math.BigInteger;
+import java.util.HashSet;
+import java.util.Set;
+
 public class GuessNumber {
 
     public int guessNumber(int n) {
@@ -33,6 +37,12 @@ public class GuessNumber {
     }
 
         public static void main(String[] args) {
-        System.out.println(new GuessNumber().guessNumber(10));
+        //System.out.println(new GuessNumber().guessNumber(10));
+
+            Set<Integer> set = new HashSet<>();
+            set.add(1);
+            set.removeAll(set);
+            System.out.println(set);
+
     }
 }
