@@ -57,36 +57,14 @@ public class Demo {
 
 
     public static void main(String[] args) {
-//       m1("ABC");
-//       m1(null);
-//
-//       List<String> list = new ArrayList<>();
-//
-//       list.add("Push");
-//        list.add("Push");
-//        list.add("Push");
-//        list.add("Push");
-//
-//        String[] strings = list.toArray(new String[0]);
-//
-//        System.out.println(Arrays.toString(strings));
 
-        Map<Integer,Integer> map = new HashMap<>();
-        map.put(0,2);
-        map.put(1,1);
-        map.put(2,4);
-        map.put(3,5);
-        map.put(4,3);
-
-        if(map.containsValue(2)){
-
-        }
+        String s1 = "123";
+        String s2 = "12";
 
 
+        System.out.println(Integer.valueOf(s1.substring(0,1))+Integer.valueOf(s2.substring(0,1)));
 
-
-
-
+        List<Integer> list = new ArrayList<>();
 
     }
 
