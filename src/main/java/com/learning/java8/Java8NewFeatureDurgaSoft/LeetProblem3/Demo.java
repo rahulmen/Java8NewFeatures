@@ -58,13 +58,24 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        String s1 = "123";
-        String s2 = "12";
+//        String s1 = "123";
+//        String s2 = "12";
+//
+//
+//        System.out.println(Integer.valueOf(s1.substring(0,1))+Integer.valueOf(s2.substring(0,1)));
+//
+//        List<Integer> list = new ArrayList<>();
 
 
-        System.out.println(Integer.valueOf(s1.substring(0,1))+Integer.valueOf(s2.substring(0,1)));
+        char c = '2';
 
-        List<Integer> list = new ArrayList<>();
+        int i = c-'0';
+        System.out.println(c-'0');
+
+        int i1 = Character.getNumericValue(c);
+
+        System.out.println(i1);
+
 
     }
 

@@ -75,7 +75,15 @@
           <version>3.2.Final</version>
       </dependency>
 
-<!--      MOCK SERVER  -->
+      <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
+      <dependency>
+          <groupId>org.apache.kafka</groupId>
+          <artifactId>kafka-clients</artifactId>
+          <version>3.0.0</version>
+      </dependency>
+
+
+      <!--      MOCK SERVER  -->
 
 
 
