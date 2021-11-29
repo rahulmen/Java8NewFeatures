@@ -13,12 +13,11 @@ public class Demo {
 
 
     public static void main(String[] args) {
-        for(int i=0;i<list.size();i++){
-            if(i==3)
-            list.remove(i);
-        }
 
-        System.out.println(list);
+        int i = 367;
+        String s = Integer.toBinaryString(i);
+        System.out.println(s);
+
     }
 
 }

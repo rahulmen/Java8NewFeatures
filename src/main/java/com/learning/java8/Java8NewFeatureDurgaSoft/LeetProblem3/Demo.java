@@ -15,22 +15,15 @@ public class Demo {
 
 
     public boolean canThreePartsEqualSum(int[] A) {
-
-
         int partition = (A.length/3)+1;
-
         int j = partition;
         int k = (partition*2);
         Integer pivot = 1;
-
         System.out.println(j);
         System.out.println(k);
-
         int firstHalfSum =0;
         int secondHalfSum =0;
         int thirdHalfSum = 0;
-
-
         do{
             for(int i=0;i<A.length;i++){
                 if(i<j){
@@ -49,34 +42,12 @@ public class Demo {
                 return true;
             }
         }while(false);
-
-
         return false;
-
     }
 
 
     public static void main(String[] args) {
-
-//        String s1 = "123";
-//        String s2 = "12";
-//
-//
-//        System.out.println(Integer.valueOf(s1.substring(0,1))+Integer.valueOf(s2.substring(0,1)));
-//
-//        List<Integer> list = new ArrayList<>();
-
-
-        char c = '2';
-
-        int i = c-'0';
-        System.out.println(c-'0');
-
-        int i1 = Character.getNumericValue(c);
-
-        System.out.println(i1);
-
-
+        System.out.println(7^3);
     }
 
 
