@@ -15,9 +15,12 @@ public class Question1 {
 
             medium = (end+begin)/2;
 
-            if(arr[medium]==key && arr[medium-1]!=key){
+            if(medium >0 && arr[medium]==key && arr[medium-1]!=key){
                 return medium;
-            }else if(medium==0 && arr[medium]==key){
+            }else if(medium == 0 && arr[medium]==key){
+                return medium;
+            }
+            else if(medium==0 && arr[medium]==key){
                 return medium;
             }
             else if(arr[medium]<key){
@@ -32,8 +35,7 @@ public class Question1 {
 
     public static void main(String[] args) {
 
-        System.out.println(new Question1().getIndex(new int[]{5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5},5));
-        long value = 10;
+        System.out.println(new Question1().getIndex(new int[]{3,4,2,3,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5},5));
    }
 
 
