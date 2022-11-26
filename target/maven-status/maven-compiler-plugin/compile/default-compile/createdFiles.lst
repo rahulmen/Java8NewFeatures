@@ -13,7 +13,9 @@ com/learning/java8/Java8NewFeatureDurgaSoft/PredicateFunctionInterfacePkg/Predic
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/SortString.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DateNTimeAPI/JODAExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/Algorithms/Sorting/ArraySortingExample1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/TwoSum.class
 com/learning/java8/Java8NewFeatureDurgaSoft/FunctionaFunctionalInterface/BiFunctionExample1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/NumberDifferentImages.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/LinkedList/LinkedListCreationDemo2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/NonNegativeNumberWithConsOnes.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructure2/Queue/Stack.class
@@ -38,6 +40,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/LambdaExpressionInroduction/MongoAcc
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/MajorityElement.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCode4/TwoSum.class
 com/learning/java8/Java8NewFeatureDurgaSoft/JavaStreamAPIImportantTopic/CollectionStreamExample7.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/MinRemoveToMakeValid.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructure2/Queue/Queue.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/XOfKind.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/BuilderPatternTest$Builder.class
@@ -50,6 +53,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/PredicateFunctionInterfacePkg/Type.c
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/ShuffleTheArray.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/RenterredLockExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/TimeCalculatorDemo1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/Suplicates.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/BuilderPatternTest.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/LinkedList/ListNode1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/RenterrentExample1.class
@@ -61,6 +65,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/JavaStreamAPIImportantTopic/Collecti
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/CallableExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/TwoSum.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/CreateConstructorReferenceObject.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/ReorganizeString.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/NoOfOneBits.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/ConstructorReferenceExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AnonymousInnerClassPkg/interface1.class
@@ -94,6 +99,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Tree/Node.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PrimitiveTypeFunctionalInterface/UnaryOperatorExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/Student.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/MethodReferenceExample3.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/SingleNonDuplicate.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PrimitiveTypeFunctionalInterface/BinaryUnaryOperator2021.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCode4/MaxExecdingSum.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Tree/TreeNode.class
@@ -115,6 +121,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/CheckCoordinatesStr
 com/learning/java8/Java8NewFeatureDurgaSoft/SecuronixInterview/Utils/ReverseStringWords.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/FreeAlphabet.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/ThreadLocalDemo2.class
+com/learning/java8/Java8NewFeatureDurgaSoft/PhonePeInter/Problem3.class
 com/learning/java8/Java8NewFeatureDurgaSoft/SecuronixInterview/Utils/SortArray1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LambdaExpressionInroduction/LambdaExpressionExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/ArraySorting.class
@@ -133,6 +140,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/RemoveDuplicate.class
 com/learning/java8/Java8NewFeatureDurgaSoft/FunctionaFunctionalInterface/FunctionExample6.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PrimitiveTypeFunctionalInterface/PrimitiveTypeFunctionalInterface2021.class
 com/learning/java8/Java8NewFeatureDurgaSoft/SecuronixInterview/Utils/PossibleSubstring.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/HammingDistance.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PrimitiveTypeFunctionalInterface/BinaryOperatorExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/LongestPalindrome.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/LinkedList/DLLNode1.class
@@ -180,13 +188,16 @@ com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/LastRemaning.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/MaketwoArrayEqual.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/BestTimeToBuyAndSellStock.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/interf.class
+com/learning/java8/Java8NewFeatureDurgaSoft/StackReturnMax.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/MaxProductOfTwoElementInArray.class
+com/learning/java8/Java8NewFeatureDurgaSoft/StackImpl.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LambdaExpressionInroduction/LambdaExpressionExample3.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/Temp4.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/TempCode$1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LambdaExpressionInroduction/LambdaExpressionComparatorListExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/RazorPayInterview/EmailUser.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Queue/QueueImplementationUsingDynamicArray.class
+com/learning/java8/Java8NewFeatureDurgaSoft/PhonePeInter/Problem2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/ShivanshuLamdbaTeaching/Student.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Queue/ListNode.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DateNTimeAPI/CheckLeapYear.class
@@ -261,15 +272,19 @@ com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Queue/QueueLinkedList
 com/learning/java8/Java8NewFeatureDurgaSoft/RazorPayInterview/Test.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/LinkedList/LinkedListCreationDemo1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructure2021/TestClass.class
+com/learning/java8/Java8NewFeatureDurgaSoft/KafkaAutomation/KafkaTestingDemo.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AnonymousInnerClassPkg/AnonymousInnerClassExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/ReverseInteger.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/PaytmCode1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/removeOuterParathesis.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/InsertionSort.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/StudentsUnableToEatLunch.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/GuessNumber.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/CountGoodTripLets.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/BubbleSort.class
 com/learning/java8/Java8NewFeatureDurgaSoft/ShivanshuLamdbaTeaching/Demo1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/InterfaceDefaultStaticMethods/InterfaceStaticMethodExample1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/PhonePeInter/Problem1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/UncommonWords.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Tree/BinaryTreeNodeExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/ThreadFinalDemo1.class
@@ -313,7 +328,9 @@ com/learning/java8/Java8NewFeatureDurgaSoft/Algorithms/Sorting/ArrayReversalAlgo
 com/learning/java8/Java8NewFeatureDurgaSoft/PredicateFunctionInterfacePkg/PredicateExample7.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/CallableExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/FunctionaFunctionalInterface/FunctionChainingExample2.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LinkedListLoop.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/ConstructorReferenceExample1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/Node.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/SumAndProduct.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/MethodReferenceExample2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/SecuronixInterview/Pages/Locators$HomePage.class
@@ -340,6 +357,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/PrimitiveTypeFunctionalInterface/Pri
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/Soldier.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/StaticMethodReference.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PhonePe/Question1.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/Sorting.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PredicateFunctionInterfacePkg/Investment$Builder.class
 com/learning/java8/Java8NewFeatureDurgaSoft/PredicateFunctionInterfacePkg/PredicateExample6.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Queue/Node.class
@@ -362,12 +380,14 @@ com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/LinkedList/ListNode.c
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/SortingSentense.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/DecompressRunLengthEncoded.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/SumOfUniqueElement.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/SelectionSort.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/Car.class
 com/learning/java8/Java8NewFeatureDurgaSoft/DataStructures/Recursion/GetSumofEvenNumber.class
 com/learning/java8/Java8NewFeatureDurgaSoft/JavaStreamAPIImportantTopic/CollectionStreamExample8.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/FindDiff.class
 com/learning/java8/Java8NewFeatureDurgaSoft/FunctionaFunctionalInterface/Employee.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/DoublePairs.class
+com/learning/java8/Java8NewFeatureDurgaSoft/Messsho/Question1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/LinkedLostNode2.class
 com/learning/java8/Java8NewFeatureDurgaSoft/FunctionaFunctionalInterface/FunctionExample12021.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/MaxSwap.class
@@ -380,6 +400,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/ShivanshuLamdbaTeaching/temp1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/JavaMaxAverageSubArray.class
 com/learning/java8/Java8NewFeatureDurgaSoft/AdvanceMultiThreading/ThreadPoolExample1.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/ThreeExPlusOneProblem.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/SplitArray.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/MethodReferenceExample5.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/GroupAnagram.class
 com/learning/java8/Java8NewFeatureDurgaSoft/MethodAndConstructorReference/vehicle.class
@@ -426,6 +447,7 @@ com/learning/java8/Java8NewFeatureDurgaSoft/LambdaExpressionInroduction/Interf3.
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/NumberOfStepsTillZero.class
 com/learning/java8/Java8NewFeatureDurgaSoft/SecuronixInterview/Utils/Utils.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/SubDomainVisits.class
+com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem3/FIndMaximumSum.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetProblem2/AddDigits.class
 com/learning/java8/Java8NewFeatureDurgaSoft/Algorithms/Sorting/ArraySortingFinal.class
 com/learning/java8/Java8NewFeatureDurgaSoft/LeetCodeProblems/PerfectSquateRoot.class
